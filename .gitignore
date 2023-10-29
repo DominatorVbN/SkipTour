@@ -1,2 +1,3 @@
 .build
 .build/checkouts/skip
+.DS_Store

@@ -3,6 +3,12 @@
 This is a [Skip](https://skip.tools) dual-platform app project.
 It builds a native app for both iOS and Android.
 
+| ![Screenshot 2023-10-29 at 3.50.14 PM](Screenshot 2023-10-29 at 3.50.14 PM.png) | ![Screenshot 2023-10-29 at 3.52.17 PM](Screenshot 2023-10-29 at 3.52.17 PM.png) | ![Screenshot 2023-10-29 at 3.53.14 PM](Screenshot 2023-10-29 at 3.53.14 PM.png) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![Screenshot 2023-10-29 at 3.50.44 PM](Screenshot 2023-10-29 at 3.50.44 PM.png) | ![Screenshot 2023-10-29 at 3.50.48 PM](Screenshot 2023-10-29 at 3.50.48 PM.png) | ![Screenshot 2023-10-29 at 3.50.53 PM](Screenshot 2023-10-29 at 3.50.53 PM.png) |
+
+
+
 ## Building
 
 This project is both a stand-alone Swift Package Manager module,
