@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This AndroidManifest.xml template was generated for the Skip module SkipTour -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- example permissions for using device location -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> -->
+
+    <!-- permissions needed for using the internet or an embedded WebKit browser -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="false" />
+
+    <application
+        android:label="${PRODUCT_NAME}"
+        android:name=".AndroidAppMain"
+        android:allowBackup="true">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

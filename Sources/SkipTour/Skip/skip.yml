@@ -1,0 +1,39 @@
+# Configuration file for https://skip.tools project
+#
+# This skip.yml file is associated with an Android App project,
+# and buiding it will create an installable .apk file.
+#
+# The app's metadata is derived from the top-level
+# ModuleName.xcconfig file, which in turn are used to generate both the
+# AndroidManifest.xml (for the Android apk) and the
+# Info.plist (for the iOS ipa).
+build:
+  contents:
+    - block: 'plugins'
+      contents:
+        - 'id("com.android.application") version "8.1.0"'
+      remove:
+        - 'id("com.android.library") version "8.1.0"'
+    - block: 'android'
+      remove:
+        - 'namespace = group as String'
+      contents:
+        - 'namespace = "skip.tour"'
+        - block: 'defaultConfig'
+          contents:
+            # Android app config and AndroidManifest.xml metadata can be specified here
+            - 'applicationId = System.getenv("PRODUCT_BUNDLE_IDENTIFIER") ?: "skip.tour"'
+        - block: 'buildFeatures'
+          contents:
+            - 'buildConfig = true'
+        - block: 'buildTypes'
+          contents:
+            - block: 'release'
+              contents:
+                # by default create an -unsigned.apk; for publishing to an app store, a valid keystore will need to be provided
+                - 'signingConfig = signingConfigs.findByName("release")'
+                # enabling minification reduces compose dependency classe size ~85%
+                - 'isMinifyEnabled = true'
+                - 'isShrinkResources = true'
+                - 'isDebuggable = false'
+                - 'proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")'

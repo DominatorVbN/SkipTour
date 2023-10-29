@@ -1,0 +1,6 @@
+# Configuration file for https://skip.tools project
+build:
+  contents:
+    - block: 'plugins'
+      remove:
+        - 'id("com.android.library") version "8.1.0"'
