@@ -3,9 +3,9 @@
 This is a [Skip](https://skip.tools) dual-platform app project.
 It builds a native app for both iOS and Android.
 
-| ![Screenshot 2023-10-29 at 3.50.14 PM](Screenshot 2023-10-29 at 3.50.14 PM.png) | ![Screenshot 2023-10-29 at 3.52.17 PM](Screenshot 2023-10-29 at 3.52.17 PM.png) | ![Screenshot 2023-10-29 at 3.53.14 PM](Screenshot 2023-10-29 at 3.53.14 PM.png) |
+| ![ios1](ios1.png) | ![ios2](ios2.png) | ![ios2](ios2.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![Screenshot 2023-10-29 at 3.50.44 PM](Screenshot 2023-10-29 at 3.50.44 PM.png) | ![Screenshot 2023-10-29 at 3.50.48 PM](Screenshot 2023-10-29 at 3.50.48 PM.png) | ![Screenshot 2023-10-29 at 3.50.53 PM](Screenshot 2023-10-29 at 3.50.53 PM.png) |
+| ![android1](android1.png) | ![android2](android2.png) | ![android3](android3.png) |
 
 
 
